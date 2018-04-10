@@ -17,7 +17,8 @@
        {% endif %}
     </h2>
     <p><strong>comments: </strong>{{ object.comment|default:"no comments" }}</p>
-    
+    <a href="{% url "photo-update" object.id %}">edit</a>
+    <a href="{% url "photo-delete" object.id %}">delete</a>
    <hr>
 {% endblock section %}
 
