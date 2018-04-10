@@ -7,7 +7,7 @@ from django.views.generic import ListView, DetailView
 # Create your views here.
 
 def first_view(request):
-    return HttpResponse('<h1> al fin una  vista </h1>')
+    return render(request, 'base.html')
 
 def category(request):
 	category_list = Category.objects.all()
